@@ -91,9 +91,9 @@ HEAD — это файл в .git, в файле — ссылка, по ссыл�
 
 ```mermaid
 graph LR;
-  untracked[Untracked (неотслеживаемый)] -- "git add" --> staged["Staged (в списке на коммит) + Tracked (отслеживаемый)"];
-  staged -- "git commit -m 'text' " --> tracked[Tracked (отслеживаемый)];
-  tracked -- "любые изменения файла" --> modified[Modified (изменённый)];
+  untracked["Untracked<br>(неотслеживаемый)"] -- "git add" --> staged["Staged<br>(в списке на коммит)<br>+ Tracked"];
+  staged -- "git commit -m 'text'" --> tracked["Tracked<br>(отслеживаемый)"];
+  tracked -- "любые изменения файла" --> modified["Modified<br>(изменённый)"];
   staged -- "любые изменения файла" --> modified;
   modified -- "git add" --> staged;
 ```
